@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<form method="GET">
+	
+	<label for="height">Introduzca su altura (metros)</label>
+	<input name="height" type="number" step="0.01" min="1" required>
+	<br>
+	
+	<label for="weight">Introduzca su peso (kilogramos)</label>
+	<input name="weight" type="number" step="0.01" min="1" required>
+	<br>
+	
+	<p>Su IMC es de: <span th:text="${imc}"></span></p>
+	
+	<button type="submit">Calcular IMC</button>
+	
+	</form>
+
+	
+</body>
+</html>

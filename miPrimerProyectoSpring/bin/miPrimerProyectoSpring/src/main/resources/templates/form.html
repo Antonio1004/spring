@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Formulario de suma</title>
+</head>
+<body>
+	
+	<form method="GET">
+	
+		<label for="numero1">Introduce un numero</label>
+		<input type="number" name="n1">
+		<br>
+		<label for="numero2">Introduce otro numero</label>
+		<input type="number" name="n2">
+	
+		<br>
+		<button type="submit">Enviar</button>
+	
+		<p th:if="${answer != null}" th:text="'Suma: ' + ${answer}"></p>
+	
+	</form>
+	
+</body>
+</html>
